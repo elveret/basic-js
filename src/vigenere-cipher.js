@@ -35,7 +35,6 @@ class VigenereCipheringMachine {
               : i - shiftForKey
           ]
         );
-
         if (cryptMode === false) {
           posKey = -posKey;
         }
@@ -44,7 +43,6 @@ class VigenereCipheringMachine {
         newChar = [message[i]];
         shiftForKey++;
       }
-
       newWord = newWord + newChar;
     }
     if (!this.direction) {
